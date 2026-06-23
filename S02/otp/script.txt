@@ -1,0 +1,5 @@
+python my_otp.py setup 30 my_otp.key
+echo "Mensagem a cifrar" > my_ptxt.txt
+python my_otp.py enc my_ptxt.txt my_otp.key
+python my_otp.py dec my_ptxt.txt.enc my_otp.key
+cat my_ptxt.txt.enc.dec
